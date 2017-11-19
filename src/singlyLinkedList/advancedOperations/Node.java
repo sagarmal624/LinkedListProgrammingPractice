@@ -1,4 +1,4 @@
-package advancedOperations;
+package singlyLinkedList.advancedOperations;
 
 public class Node {
     private Integer data;

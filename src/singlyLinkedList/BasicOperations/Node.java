@@ -1,4 +1,4 @@
-package BasicOperations;
+package singlyLinkedList.BasicOperations;
 
 public class Node<T> {
     private T data;

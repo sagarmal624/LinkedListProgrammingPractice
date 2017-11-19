@@ -1,4 +1,4 @@
-package BasicOperations;
+package singlyLinkedList.BasicOperations;
 
 import java.util.*;
 
