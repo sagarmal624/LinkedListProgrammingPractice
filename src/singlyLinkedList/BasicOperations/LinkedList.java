@@ -8,21 +8,14 @@ public class LinkedList<T> {
     public static void main(String[] args) {
 
         LinkedList<Integer> linkedList = new LinkedList<Integer>();
-        linkedList.addLastNode(2);
-        linkedList.addLastNode(8);
+        linkedList.addLastNode(6);
+        linkedList.addLastNode(-6);
         linkedList.addLastNode(3);
-        linkedList.addLastNode(1);
         linkedList.addLastNode(2);
-        linkedList.addLastNode(5);
-        LinkedList<Integer> secondList = new LinkedList<Integer>();
-        secondList.addLastNode(2);
-        secondList.addLastNode(5);
-        secondList.addLastNode(9);
-        secondList.addLastNode(8);
-        secondList.addLastNode(5);
-        secondList.addLastNode(10);
-        linkedList.intersectionByMethod1(secondList);
-        linkedList.intersectionByMethod2(secondList);
+        linkedList.addLastNode(-5);
+        linkedList.addLastNode(4);
+        linkedList.deleteSumEqualToZero();
+        linkedList.display();
     }
 
 
@@ -144,7 +137,6 @@ public class LinkedList<T> {
             } else {
                 Integer sum = (Integer) start.getData();
                 flag = false;
-
                 while (!stack.isEmpty()) {
                     Node<T> temp = stack.pop();
                     sum += (Integer) temp.getData();
@@ -161,7 +153,6 @@ public class LinkedList<T> {
                 }
             }
             start = start.getNext();
-
         }
         root = null;
         for (Node<T> node : stack) {
